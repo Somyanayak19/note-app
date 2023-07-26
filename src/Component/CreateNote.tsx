@@ -1,11 +1,8 @@
 import BoxComonent from "../UI/Box/Box";
 import React from 'react';
 import NoteForm from "./NoteForm";
-import { Button, CardActions, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import CardContent from '@mui/material/CardContent';
-import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
-import { createNote } from "../Store/Note";
 
 const CreateNote = () => {
 

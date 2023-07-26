@@ -1,7 +1,5 @@
 import  React from 'react';
 import Box from '@mui/material/Box';
-import { Button, CardActions, Typography } from '@mui/material';
-import CardContent from '@mui/material/CardContent';
 
 interface Props {
  children: any;

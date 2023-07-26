@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './UI/Header/Header';
-import BoxComonent from './UI/Box/Box';
 import { Grid } from '@mui/material';
-import CreateNote from './Component/CreateNote';
 import Store, { persistor } from './Store/store';
 import { Provider } from 'react-redux';
 import Router from './Component/Router';

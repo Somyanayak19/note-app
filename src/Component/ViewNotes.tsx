@@ -1,14 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Note, NotesList } from "../Model/notes";
+import { Note } from "../Model/notes";
 import React from "react";
 import { Box, Grid, Modal, Typography } from "@mui/material";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import { useState, useEffect, useMemo } from "react";
 import { deleteNote } from "../Store/Note";
 import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
-import CreateNote from "./CreateNote";
 import NoteForm from "./NoteForm";
 import "./ViewNotes.css";
 import SearchBox from "../UI/SearchBox/SearchBox";
@@ -120,7 +117,7 @@ const ViewNotes = () => {
             );
           })}
       </Grid>
-      {filteredNotes.length == 0 && (
+      {filteredNotes.length === 0 && (
         <div style={{ textAlign: "center", marginTop: "10vh" }}>
           No Notes Found
         </div>

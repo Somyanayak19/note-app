@@ -1,17 +1,13 @@
 import { useForm } from "react-hook-form";
 import { Button } from "@mui/material";
-import BoxComonent from "../UI/Box/Box";
 import React, { useCallback } from "react";
 import {
   CardActions,
   TextField,
-  TextareaAutosize,
   Typography,
 } from "@mui/material";
-import CardContent from "@mui/material/CardContent";
 import { useDispatch } from "react-redux";
 import { createNote, updateNote } from "../Store/Note";
-import { createNewNoteAction } from "../Store/NoteAction";
 import { useNavigate } from "react-router";
 import { Note } from "../Model/notes";
 
@@ -40,7 +36,7 @@ const NoteForm = ({ id, title, description, onEditNote }: Note) => {
       dispatch(createNote(data));
       navigate("/notes");
     }
-  },[title, description]);
+  },[title, description, dispatch, navigate, onEditNote]);
   return (
     <form onSubmit={handleSubmit(SubmitNote)}>
       <Typography sx={{ fontWeight: "bold" }} component="div" gutterBottom>

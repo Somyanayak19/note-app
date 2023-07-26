@@ -2,10 +2,7 @@ import React from 'react';
 import './Header.css'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import CreateNote from '../../Component/CreateNote';
-import { Link, Route, useLocation, useNavigate } from 'react-router-dom';
-import ViewNotes from '../../Component/ViewNotes'
-
+import {useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const location = useLocation();
